@@ -1,0 +1,43 @@
+{
+  "name": "eslint-failing-rules-off-config",
+  "version": "1.0.0",
+  "description": "Returns an ESLint config with all the failing rules \"off\"",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "standard",
+    "unit": "ava ${CI:+--verbose}",
+    "test": "npm run lint && npm run unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mightyiam/eslint-failing-rules-off-config.git"
+  },
+  "keywords": [
+    "eslint",
+    "failing",
+    "rules",
+    "off",
+    "ignore",
+    "configuration"
+  ],
+  "author": "Shahar Or <mightyiampresence@gmail.com> (mightyiam)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mightyiam/eslint-failing-rules-off-config/issues"
+  },
+  "homepage": "https://github.com/mightyiam/eslint-failing-rules-off-config#readme",
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "lodash": "https://api.github.com/repos/lodash/lodash/tarball/fd4808147d762ba40299bc67b5ae3807f20d6145",
+    "mock-require": "^2.0.0",
+    "simple-spy": "^2.0.4",
+    "standard": "^8.6.0"
+  },
+  "dependencies": {
+    "eslint-failing-rules": "^1.0.0",
+    "eslint-off-rules": "^1.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^3.11.1"
+  }
+}
