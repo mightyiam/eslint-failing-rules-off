@@ -38,6 +38,6 @@
     "eslint-off-rules": "^1.0.0"
   },
   "peerDependencies": {
-    "eslint": "^3.11.1"
+    "eslint": "^3.0.0"
   }
 }
