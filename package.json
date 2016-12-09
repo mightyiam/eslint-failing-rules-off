@@ -1,6 +1,6 @@
 {
   "name": "eslint-failing-rules-off-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Returns an ESLint config with all the failing rules \"off\"",
   "main": "lib/index.js",
   "scripts": {
