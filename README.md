@@ -12,8 +12,9 @@ Returns an ESLint config with all the failing rules "off".
 ```js
 const { writeFileSync } = require('fs')
 const offConfig = require('eslint-failing-rules-off-config')
+const eslint = require('eslint')
 
-const config = offConfig(['**/*.js'])
+const config = offConfig(eslint, ['**/*.js'])
 writeFileSync('.eslintrc.json', JSON.stringify(config))
 ```
 
