@@ -3,7 +3,7 @@
 
 # eslint-failing-rules-off-config
 
-Returns an ESLint config with all the failing rules "off".
+Returns an ESLint config `rules` object with all the failing rules "off".
 
 ## Usage
 
@@ -14,7 +14,9 @@ const { writeFileSync } = require('fs')
 const offConfig = require('eslint-failing-rules-off-config')
 const eslint = require('eslint')
 
-const config = offConfig(eslint, ['**/*.js'])
+const config = {
+  rules: offConfig(eslint, ['**/*.js'])
+}
 writeFileSync('.eslintrc.json', JSON.stringify(config))
 ```
 
@@ -28,4 +30,4 @@ writeFileSync('.eslintrc.json', JSON.stringify(config))
   Same as input for [`executeOnFiles`](http://eslint.org/docs/developer-guide/nodejs-api#executeonfiles)
 
 Checks for failing rules using [eslint-failing-rules](https://www.npmjs.com/package/eslint-failing-rules).
-Returns an ESLint configuration object which has all of the failing rules set to "off".
+Returns an ESLint config `rules` object which has all of the failing rules set to "off".
