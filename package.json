@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/mightyiam/eslint-failing-rules-off-config#readme",
   "devDependencies": {
-    "ava": "^0.25.0",
+    "ava": "^1.2.0",
     "lodash": "https://api.github.com/repos/lodash/lodash/tarball/fd4808147d762ba40299bc67b5ae3807f20d6145",
     "mock-require": "^3.0.1",
     "simple-spy": "^2.2.1",
